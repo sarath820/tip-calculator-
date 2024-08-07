@@ -34,7 +34,7 @@ body{
     background-color:hsl(0, 0%, 100%) ;
     border-radius: 20px 20px 0px 0px;
     position: -webkit-sticky;
-    position: sticky;
+    position: absolute;
     bottom: 0px;
     display: flex;
     flex-direction: column;
@@ -109,5 +109,6 @@ p{
     .tipresult{
         width : 50%;
         height: 80%;
+        border-radius: 20px 20px 20px 20px;
     }
 }
