@@ -1,8 +1,17 @@
-document.querySelectorAll(".tip div").forEach((element)=>{
-   element.addEventListener("click",()=>{
+let boxvalue = 0;
 
-        let box = document.querySelectorAll(".box").value;
-        console.log(box);
+document.querySelector(".box1").addEventListener("input",function() {
+    boxvalue = this.value;
+})
+
+document.querySelectorAll(".tip div").forEach((element)=>{
+   element.addEventListener("click", function (){
+         
+        console.log(boxvalue);
+
+        
+        
+        
     });
 })
 

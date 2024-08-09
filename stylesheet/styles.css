@@ -23,7 +23,13 @@ body{
     align-self: start;
 
 }
-
+.box1{
+    width:80%;
+    background-color:hsl(189, 41%, 97%);
+    border: none;
+    padding: 3%;
+    align-self: start;
+}
 .custom{
     background-color: hsl(189, 41%, 97%);
     color: hsl(186, 14%, 43%);
