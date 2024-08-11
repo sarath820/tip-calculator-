@@ -33,7 +33,27 @@ body{
 .custom{
     background-color: hsl(189, 41%, 97%);
     color: hsl(186, 14%, 43%);
+    border: none;
 }
+
+input[name="custom"]::-webkit-inner-spin-button,
+input[name="custom"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[name="custom"]:hover:-webkit-inner-spin-button,
+input[name="custom"]:hover:-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[name="custom"] {
+    -moz-appearance: textfield;
+}
+
+
 .maindiv{
     width: 100%;
     height: 80vh;
@@ -57,7 +77,7 @@ p{
     flex-wrap: wrap;
     width: 90%;
 }
-.tip div{
+.tip div, .tip input{
     width: 33%;
     padding : 3%;
     border-radius: 5%;

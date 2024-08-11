@@ -1,15 +1,20 @@
 let boxvalue = 0;
 let personbox = 0;
-
+// let custombox = 0
 document.querySelector(".box1").addEventListener("input",function() {
     boxvalue = this.value;
 })
 
+// document.querySelector(".custom").addEventListener("input",function(){
+//      custombox = this.value;
+// })
+
 document.querySelector(".box").addEventListener("input",function(){
     personbox = this.value;
 })
-document.querySelectorAll(".tip div").forEach((element)=>{
+document.querySelectorAll(".tip *").forEach((element)=>{
    element.addEventListener("click", function (){
+        
          ht = this.innerHTML;
          let partstring = ht.substring(0,2);
          let numberstring = +partstring;
@@ -29,3 +34,5 @@ document.querySelector(".reset").addEventListener("click", ()=>{
     document.querySelector(".total").innerHTML = 0;
         document.querySelector(".tipperson").innerHTML = 0;
 })
+
+
